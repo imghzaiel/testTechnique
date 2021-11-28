@@ -7,11 +7,8 @@ use App\Repository\CommentRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ApiResource(
- * normalizationContext={"groups"={"article:read"}},
- * denormalizationContext={"groups"={"article:write"}}
- * )
- * @ORM\Entity(repositoryClass=CommentRepository::class)
+ * @ApiResource()
+ * @ORM\Entity(repositoryClass="App\Repository\CommentRepository")
  */
 class Comment
 {

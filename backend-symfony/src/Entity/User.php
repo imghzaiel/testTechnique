@@ -9,12 +9,8 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ApiResource(
- * normalizationContext={"groups"={"article:read"}},
- * denormalizationContext={"groups"={"article:write"}}
- * )
- * @ORM\Entity(repositoryClass=UserRepository::class)
- * @ORM\Table(name="`user`")
+ * @ApiResource()
+ * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  */
 class User
 {
